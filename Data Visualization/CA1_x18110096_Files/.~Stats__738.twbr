@@ -1,0 +1,2999 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1219.1533                               -->
+<workbook source-build='2018.3.2 (20183.18.1219.1533)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='stats' inline='true' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='stats' name='textscan.07uchy40odm2451clfm11024s3z3'>
+            <connection class='textscan' directory='/Users/zainulabedin/Documents/Project/Extra/Sem2/DV/CA1-Premierleague' filename='stats.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.07uchy40odm2451clfm11024s3z3' name='stats.csv' table='[stats#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='team' ordinal='0' />
+            <column datatype='integer' name='wins' ordinal='1' />
+            <column datatype='integer' name='losses' ordinal='2' />
+            <column datatype='integer' name='goals' ordinal='3' />
+            <column datatype='integer' name='total_yel_card' ordinal='4' />
+            <column datatype='integer' name='total_red_card' ordinal='5' />
+            <column datatype='integer' name='total_scoring_att' ordinal='6' />
+            <column datatype='integer' name='ontarget_scoring_att' ordinal='7' />
+            <column datatype='integer' name='hit_woodwork' ordinal='8' />
+            <column datatype='integer' name='att_hd_goal' ordinal='9' />
+            <column datatype='integer' name='att_pen_goal' ordinal='10' />
+            <column datatype='integer' name='att_freekick_goal' ordinal='11' />
+            <column datatype='integer' name='att_ibox_goal' ordinal='12' />
+            <column datatype='integer' name='att_obox_goal' ordinal='13' />
+            <column datatype='integer' name='goal_fastbreak' ordinal='14' />
+            <column datatype='integer' name='total_offside' ordinal='15' />
+            <column datatype='integer' name='clean_sheet' ordinal='16' />
+            <column datatype='integer' name='goals_conceded' ordinal='17' />
+            <column datatype='integer' name='saves' ordinal='18' />
+            <column datatype='integer' name='outfielder_block' ordinal='19' />
+            <column datatype='integer' name='interception' ordinal='20' />
+            <column datatype='integer' name='total_tackle' ordinal='21' />
+            <column datatype='integer' name='last_man_tackle' ordinal='22' />
+            <column datatype='integer' name='total_clearance' ordinal='23' />
+            <column datatype='integer' name='head_clearance' ordinal='24' />
+            <column datatype='integer' name='own_goals' ordinal='25' />
+            <column datatype='integer' name='penalty_conceded' ordinal='26' />
+            <column datatype='integer' name='pen_goals_conceded' ordinal='27' />
+            <column datatype='integer' name='total_pass' ordinal='28' />
+            <column datatype='integer' name='total_through_ball' ordinal='29' />
+            <column datatype='integer' name='total_long_balls' ordinal='30' />
+            <column datatype='integer' name='backward_pass' ordinal='31' />
+            <column datatype='integer' name='total_cross' ordinal='32' />
+            <column datatype='integer' name='corner_taken' ordinal='33' />
+            <column datatype='integer' name='touches' ordinal='34' />
+            <column datatype='integer' name='big_chance_missed' ordinal='35' />
+            <column datatype='integer' name='clearance_off_line' ordinal='36' />
+            <column datatype='integer' name='dispossessed' ordinal='37' />
+            <column datatype='integer' name='penalty_save' ordinal='38' />
+            <column datatype='integer' name='total_high_claim' ordinal='39' />
+            <column datatype='integer' name='punches' ordinal='40' />
+            <column datatype='date' date-parse-format='yyyy' name='season' ordinal='41' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>team</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wins]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>wins</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[losses]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>losses</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[goals]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>goals</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_yel_card</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_yel_card]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>total_yel_card</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_red_card</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_red_card]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>total_red_card</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_scoring_att</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_scoring_att]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>total_scoring_att</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ontarget_scoring_att</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ontarget_scoring_att]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>ontarget_scoring_att</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hit_woodwork</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hit_woodwork]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>hit_woodwork</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>att_hd_goal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[att_hd_goal]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>att_hd_goal</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>att_pen_goal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[att_pen_goal]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>att_pen_goal</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>att_freekick_goal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[att_freekick_goal]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>att_freekick_goal</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>att_ibox_goal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[att_ibox_goal]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>att_ibox_goal</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>att_obox_goal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[att_obox_goal]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>att_obox_goal</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goal_fastbreak</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[goal_fastbreak]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>goal_fastbreak</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_offside</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_offside]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>total_offside</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clean_sheet</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clean_sheet]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>clean_sheet</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_conceded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[goals_conceded]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>goals_conceded</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>saves</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[saves]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>saves</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outfielder_block</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[outfielder_block]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>outfielder_block</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>interception</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[interception]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>interception</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_tackle</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_tackle]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>total_tackle</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_man_tackle</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[last_man_tackle]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>last_man_tackle</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_clearance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_clearance]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>total_clearance</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>head_clearance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[head_clearance]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>head_clearance</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>own_goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[own_goals]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>own_goals</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>penalty_conceded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[penalty_conceded]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>penalty_conceded</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pen_goals_conceded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pen_goals_conceded]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>pen_goals_conceded</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_pass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_pass]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>total_pass</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_through_ball</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_through_ball]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>total_through_ball</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_long_balls</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_long_balls]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>total_long_balls</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>backward_pass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[backward_pass]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>backward_pass</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cross</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_cross]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>total_cross</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>corner_taken</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[corner_taken]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>corner_taken</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>touches</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[touches]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>touches</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>big_chance_missed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[big_chance_missed]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>big_chance_missed</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clearance_off_line</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clearance_off_line]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>clearance_off_line</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dispossessed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dispossessed]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>dispossessed</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>penalty_save</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[penalty_save]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>penalty_save</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_high_claim</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_high_claim]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>total_high_claim</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>punches</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[punches]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>punches</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[stats.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Att Freekick Goal' datatype='integer' name='[att_freekick_goal]' role='measure' type='quantitative' />
+      <column caption='Att Hd Goal' datatype='integer' name='[att_hd_goal]' role='measure' type='quantitative' />
+      <column caption='Att Ibox Goal' datatype='integer' name='[att_ibox_goal]' role='measure' type='quantitative' />
+      <column caption='Att Obox Goal' datatype='integer' name='[att_obox_goal]' role='measure' type='quantitative' />
+      <column caption='Att Pen Goal' datatype='integer' name='[att_pen_goal]' role='measure' type='quantitative' />
+      <column caption='Backward Pass' datatype='integer' name='[backward_pass]' role='measure' type='quantitative' />
+      <column caption='Big Chance Missed' datatype='integer' name='[big_chance_missed]' role='measure' type='quantitative' />
+      <column caption='Clean Sheet' datatype='integer' name='[clean_sheet]' role='measure' type='quantitative' />
+      <column caption='Clearance Off Line' datatype='integer' name='[clearance_off_line]' role='measure' type='quantitative' />
+      <column caption='Corner Taken' datatype='integer' name='[corner_taken]' role='measure' type='quantitative' />
+      <column caption='Dispossessed' datatype='integer' name='[dispossessed]' role='measure' type='quantitative' />
+      <column caption='Goal Fastbreak' datatype='integer' name='[goal_fastbreak]' role='measure' type='quantitative' />
+      <column caption='Goals' datatype='integer' name='[goals]' role='measure' type='quantitative' />
+      <column caption='Goals Conceded' datatype='integer' name='[goals_conceded]' role='measure' type='quantitative' />
+      <column caption='Head Clearance' datatype='integer' name='[head_clearance]' role='measure' type='quantitative' />
+      <column caption='Hit Woodwork' datatype='integer' name='[hit_woodwork]' role='measure' type='quantitative' />
+      <column caption='Interception' datatype='integer' name='[interception]' role='measure' type='quantitative' />
+      <column caption='Last Man Tackle' datatype='integer' name='[last_man_tackle]' role='measure' type='quantitative' />
+      <column caption='Losses' datatype='integer' name='[losses]' role='measure' type='quantitative' />
+      <column caption='Ontarget Scoring Att' datatype='integer' name='[ontarget_scoring_att]' role='measure' type='quantitative' />
+      <column caption='Outfielder Block' datatype='integer' name='[outfielder_block]' role='measure' type='quantitative' />
+      <column caption='Own Goals' datatype='integer' name='[own_goals]' role='measure' type='quantitative' />
+      <column caption='Pen Goals Conceded' datatype='integer' name='[pen_goals_conceded]' role='measure' type='quantitative' />
+      <column caption='Penalty Conceded' datatype='integer' name='[penalty_conceded]' role='measure' type='quantitative' />
+      <column caption='Penalty Save' datatype='integer' name='[penalty_save]' role='measure' type='quantitative' />
+      <column caption='Punches' datatype='integer' name='[punches]' role='measure' type='quantitative' />
+      <column caption='Saves' datatype='integer' name='[saves]' role='measure' type='quantitative' />
+      <column caption='Season' datatype='date' name='[season]' role='dimension' type='quantitative' />
+      <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+      <column caption='Total Clearance' datatype='integer' name='[total_clearance]' role='measure' type='quantitative' />
+      <column caption='Total Cross' datatype='integer' name='[total_cross]' role='measure' type='quantitative' />
+      <column caption='Total High Claim' datatype='integer' name='[total_high_claim]' role='measure' type='quantitative' />
+      <column caption='Total Long Balls' datatype='integer' name='[total_long_balls]' role='measure' type='quantitative' />
+      <column caption='Total Offside' datatype='integer' name='[total_offside]' role='measure' type='quantitative' />
+      <column caption='Total Pass' datatype='integer' name='[total_pass]' role='measure' type='quantitative' />
+      <column caption='Total Red Card' datatype='integer' name='[total_red_card]' role='measure' type='quantitative' />
+      <column caption='Total Scoring Att' datatype='integer' name='[total_scoring_att]' role='measure' type='quantitative' />
+      <column caption='Total Tackle' datatype='integer' name='[total_tackle]' role='measure' type='quantitative' />
+      <column caption='Total Through Ball' datatype='integer' name='[total_through_ball]' role='measure' type='quantitative' />
+      <column caption='Total Yel Card' datatype='integer' name='[total_yel_card]' role='measure' type='quantitative' />
+      <column caption='Touches' datatype='integer' name='[touches]' role='measure' type='quantitative' />
+      <column caption='Wins' datatype='integer' name='[wins]' role='measure' type='quantitative' />
+      <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[att_freekick_goal]' derivation='Sum' name='[sum:att_freekick_goal:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[att_hd_goal]' derivation='Sum' name='[sum:att_hd_goal:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[att_ibox_goal]' derivation='Sum' name='[sum:att_ibox_goal:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[att_obox_goal]' derivation='Sum' name='[sum:att_obox_goal:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[att_pen_goal]' derivation='Sum' name='[sum:att_pen_goal:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[backward_pass]' derivation='Sum' name='[sum:backward_pass:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[big_chance_missed]' derivation='Sum' name='[sum:big_chance_missed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[clean_sheet]' derivation='Sum' name='[sum:clean_sheet:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[clearance_off_line]' derivation='Sum' name='[sum:clearance_off_line:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[corner_taken]' derivation='Sum' name='[sum:corner_taken:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[dispossessed]' derivation='Sum' name='[sum:dispossessed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[goal_fastbreak]' derivation='Sum' name='[sum:goal_fastbreak:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[goals]' derivation='Sum' name='[sum:goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[goals_conceded]' derivation='Sum' name='[sum:goals_conceded:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[head_clearance]' derivation='Sum' name='[sum:head_clearance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[hit_woodwork]' derivation='Sum' name='[sum:hit_woodwork:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[interception]' derivation='Sum' name='[sum:interception:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[last_man_tackle]' derivation='Sum' name='[sum:last_man_tackle:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[losses]' derivation='Sum' name='[sum:losses:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_red_card]' derivation='Sum' name='[sum:total_red_card:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_yel_card]' derivation='Sum' name='[sum:total_yel_card:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[wins]' derivation='Sum' name='[sum:wins:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.106599' measure-ordering='alphabetic' measure-percentage='0.893401' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:team:nk]' type='palette'>
+            <map to='#14a2ff'>
+              <bucket>&quot;Manchester City&quot;</bucket>
+            </map>
+            <map to='#302cff'>
+              <bucket>&quot;Chelsea&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Burnley&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sheffield United&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AFC Bournemouth&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Blackburn Rovers&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Norwich City&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Crystal Palace&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Swansea City&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cardiff City&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Southampton&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Blackpool&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Portsmouth&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Leicester City&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Wolverhampton Wanderers&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Huddersfield Town&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;West Ham United&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bolton Wanderers&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Queens Park Rangers&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Derby County&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tottenham Hotspur&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Everton&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Watford&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Hull City&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Wigan Athletic&quot;</bucket>
+            </map>
+            <map to='#d53f6f'>
+              <bucket>&quot;Liverpool&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Charlton Athletic&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Stoke City&quot;</bucket>
+            </map>
+            <map to='#e51c1a'>
+              <bucket>&quot;Manchester United&quot;</bucket>
+            </map>
+            <map to='#e7a117'>
+              <bucket>&quot;Arsenal&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Brighton and Hove Albion&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Reading&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Aston Villa&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Middlesbrough&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Fulham&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;West Bromwich Albion&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sunderland&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Birmingham City&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Newcastle United&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:big_chance_missed:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_ibox_goal:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:dispossessed:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:clean_sheet:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_obox_goal:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:interception:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_freekick_goal:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:head_clearance:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_pen_goal:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goal_fastbreak:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:hit_woodwork:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:last_man_tackle:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:clearance_off_line:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals_conceded:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:losses:qk]&quot;</bucket>
+            </map>
+            <map to='#ef000b'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_red_card:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:backward_pass:qk]&quot;</bucket>
+            </map>
+            <map to='#f4e609'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_yel_card:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:corner_taken:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_hd_goal:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Stepped lines' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Team' />
+        <param name='target' value='Stepped lines' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Attack'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stats' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oyvh401d8i2s4178mcjd16ikzmk'>
+            <column caption='Att Freekick Goal' datatype='integer' name='[att_freekick_goal]' role='measure' type='quantitative' />
+            <column caption='Att Hd Goal' datatype='integer' name='[att_hd_goal]' role='measure' type='quantitative' />
+            <column caption='Att Ibox Goal' datatype='integer' name='[att_ibox_goal]' role='measure' type='quantitative' />
+            <column caption='Att Obox Goal' datatype='integer' name='[att_obox_goal]' role='measure' type='quantitative' />
+            <column caption='Att Pen Goal' datatype='integer' name='[att_pen_goal]' role='measure' type='quantitative' />
+            <column caption='Corner Taken' datatype='integer' name='[corner_taken]' role='measure' type='quantitative' />
+            <column caption='Goal Fastbreak' datatype='integer' name='[goal_fastbreak]' role='measure' type='quantitative' />
+            <column caption='Goals' datatype='integer' name='[goals]' role='measure' type='quantitative' />
+            <column caption='Hit Woodwork' datatype='integer' name='[hit_woodwork]' role='measure' type='quantitative' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Ontarget Scoring Att' datatype='integer' name='[ontarget_scoring_att]' role='measure' type='quantitative' />
+            <column caption='Pen Goals Conceded' datatype='integer' name='[pen_goals_conceded]' role='measure' type='quantitative' />
+            <column caption='Season' datatype='date' name='[season]' role='dimension' type='quantitative' />
+            <column-instance column='[att_freekick_goal]' derivation='Sum' name='[sum:att_freekick_goal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[att_hd_goal]' derivation='Sum' name='[sum:att_hd_goal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[att_ibox_goal]' derivation='Sum' name='[sum:att_ibox_goal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[att_obox_goal]' derivation='Sum' name='[sum:att_obox_goal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[att_pen_goal]' derivation='Sum' name='[sum:att_pen_goal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[corner_taken]' derivation='Sum' name='[sum:corner_taken:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[goal_fastbreak]' derivation='Sum' name='[sum:goal_fastbreak:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[goals]' derivation='Sum' name='[sum:goals:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hit_woodwork]' derivation='Sum' name='[sum:hit_woodwork:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ontarget_scoring_att]' derivation='Sum' name='[sum:ontarget_scoring_att:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pen_goals_conceded]' derivation='Sum' name='[sum:pen_goals_conceded:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_cross]' derivation='Sum' name='[sum:total_cross:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_high_claim]' derivation='Sum' name='[sum:total_high_claim:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_long_balls]' derivation='Sum' name='[sum:total_long_balls:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_pass]' derivation='Sum' name='[sum:total_pass:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_scoring_att]' derivation='Sum' name='[sum:total_scoring_att:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_through_ball]' derivation='Sum' name='[sum:total_through_ball:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[touches]' derivation='Sum' name='[sum:touches:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[wins]' derivation='Sum' name='[sum:wins:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column caption='Total Cross' datatype='integer' name='[total_cross]' role='measure' type='quantitative' />
+            <column caption='Total High Claim' datatype='integer' name='[total_high_claim]' role='measure' type='quantitative' />
+            <column caption='Total Long Balls' datatype='integer' name='[total_long_balls]' role='measure' type='quantitative' />
+            <column caption='Total Pass' datatype='integer' name='[total_pass]' role='measure' type='quantitative' />
+            <column caption='Total Scoring Att' datatype='integer' name='[total_scoring_att]' role='measure' type='quantitative' />
+            <column caption='Total Through Ball' datatype='integer' name='[total_through_ball]' role='measure' type='quantitative' />
+            <column caption='Touches' datatype='integer' name='[touches]' role='measure' type='quantitative' />
+            <column-instance column='[season]' derivation='Year-Trunc' name='[tyr:season:ok]' pivot='key' type='ordinal' />
+            <column caption='Wins' datatype='integer' name='[wins]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_freekick_goal:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_hd_goal:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_ibox_goal:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_obox_goal:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_pen_goal:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:corner_taken:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goal_fastbreak:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:hit_woodwork:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:ontarget_scoring_att:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:pen_goals_conceded:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_cross:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_high_claim:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_long_balls:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_pass:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_scoring_att:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_through_ball:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:touches:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Chelsea&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Manchester City&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Manchester United&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Manchester United&quot;</bucket>
+              <bucket>&quot;Manchester City&quot;</bucket>
+              <bucket>&quot;Chelsea&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]'>
+            <groupfilter from='#2007-01-01 00:00:00#' function='range' level='[tyr:season:ok]' to='#2018-01-01 00:00:00#' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</column>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]</column>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]' value='56' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk] / [federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok])</rows>
+        <cols>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Box and Whisker'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stats' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oyvh401d8i2s4178mcjd16ikzmk'>
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Season' datatype='date' name='[season]' role='dimension' type='quantitative' />
+            <column-instance column='[wins]' derivation='Sum' name='[sum:wins:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column-instance column='[season]' derivation='Year-Trunc' name='[tyr:season:ok]' pivot='key' type='ordinal' />
+            <column caption='Wins' datatype='integer' name='[wins]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]' value='97' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' />
+              <text column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.36182320117950439' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</rows>
+        <cols>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Liverpool&quot;</value>
+                <value>20</value>
+                <value>#2007-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Wigan Athletic&quot;</value>
+                <value>9</value>
+                <value>#2010-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;West Bromwich Albion&quot;</value>
+                <value>10</value>
+                <value>#2016-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tottenham Hotspur&quot;</value>
+                <value>19</value>
+                <value>#2015-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tottenham Hotspur&quot;</value>
+                <value>20</value>
+                <value>#2012-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Swansea City&quot;</value>
+                <value>8</value>
+                <value>#2018-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Sunderland&quot;</value>
+                <value>6</value>
+                <value>#2017-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Sunderland&quot;</value>
+                <value>9</value>
+                <value>#2009-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Southampton&quot;</value>
+                <value>7</value>
+                <value>#2018-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Portsmouth&quot;</value>
+                <value>7</value>
+                <value>#2010-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Norwich City&quot;</value>
+                <value>8</value>
+                <value>#2014-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Newcastle United&quot;</value>
+                <value>19</value>
+                <value>#2012-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Manchester United&quot;</value>
+                <value>20</value>
+                <value>#2015-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Manchester City&quot;</value>
+                <value>19</value>
+                <value>#2016-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Manchester City&quot;</value>
+                <value>23</value>
+                <value>#2013-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Manchester City&quot;</value>
+                <value>28</value>
+                <value>#2012-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Liverpool&quot;</value>
+                <value>26</value>
+                <value>#2014-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Liverpool&quot;</value>
+                <value>18</value>
+                <value>#2010-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='18' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Hull City&quot;</value>
+                <value>8</value>
+                <value>#2015-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='19' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Hull City&quot;</value>
+                <value>8</value>
+                <value>#2009-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='20' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Fulham&quot;</value>
+                <value>9</value>
+                <value>#2014-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='21' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Chelsea&quot;</value>
+                <value>21</value>
+                <value>#2018-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='22' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Chelsea&quot;</value>
+                <value>25</value>
+                <value>#2014-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='23' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Chelsea&quot;</value>
+                <value>22</value>
+                <value>#2013-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='24' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Burnley&quot;</value>
+                <value>8</value>
+                <value>#2010-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='25' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Brighton and Hove Albion&quot;</value>
+                <value>9</value>
+                <value>#2018-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='26' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Bolton Wanderers&quot;</value>
+                <value>9</value>
+                <value>#2008-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='27' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Blackburn Rovers&quot;</value>
+                <value>8</value>
+                <value>#2012-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='28' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Birmingham City&quot;</value>
+                <value>8</value>
+                <value>#2008-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='29' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Aston Villa&quot;</value>
+                <value>10</value>
+                <value>#2014-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='30' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Aston Villa&quot;</value>
+                <value>7</value>
+                <value>#2012-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='31' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Aston Villa&quot;</value>
+                <value>17</value>
+                <value>#2009-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='32' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Arsenal&quot;</value>
+                <value>23</value>
+                <value>#2017-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='33' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Arsenal&quot;</value>
+                <value>20</value>
+                <value>#2016-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='34' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Arsenal&quot;</value>
+                <value>22</value>
+                <value>#2015-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='35' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Arsenal&quot;</value>
+                <value>24</value>
+                <value>#2014-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='36' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</field>
+                  <field>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Arsenal&quot;</value>
+                <value>21</value>
+                <value>#2012-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+    </worksheet>
+    <worksheet name='Goals scored | Goals conceded'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Goals scored | Goals conceded&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stats' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oyvh401d8i2s4178mcjd16ikzmk'>
+            <column caption='Goals' datatype='integer' name='[goals]' role='measure' type='quantitative' />
+            <column caption='Goals Conceded' datatype='integer' name='[goals_conceded]' role='measure' type='quantitative' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Season' datatype='date' name='[season]' role='dimension' type='quantitative' />
+            <column-instance column='[goals]' derivation='Sum' name='[sum:goals:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[goals_conceded]' derivation='Sum' name='[sum:goals_conceded:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column-instance column='[season]' derivation='Year-Trunc' name='[tyr:season:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Arsenal&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Chelsea&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Liverpool&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Manchester City&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Manchester United&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]' value='81' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='10' />
+            <format attr='div-level' scope='cols' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals_conceded:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' value-column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals_conceded:qk]' z-order='2' />
+            <reference-line axis-column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals:qk]' enable-instant-analytics='true' fill-above='true' fill-below='true' formula='average' id='refline1' label-type='none' percentage-bands='true' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals_conceded:qk]' z-order='1'>
+              <reference-line-value percentage='60' />
+              <reference-line-value percentage='80' />
+            </reference-line>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk] * [federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals:qk])</rows>
+        <cols>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Man. City Total Wins and losses'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stats' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oyvh401d8i2s4178mcjd16ikzmk'>
+            <column caption='Losses' datatype='integer' name='[losses]' role='measure' type='quantitative' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Season' datatype='date' name='[season]' role='dimension' type='quantitative' />
+            <column-instance column='[losses]' derivation='Sum' name='[sum:losses:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[wins]' derivation='Sum' name='[sum:wins:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column-instance column='[season]' derivation='Year-Trunc' name='[tyr:season:qk]' pivot='key' type='quantitative' />
+            <column caption='Wins' datatype='integer' name='[wins]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]'>
+            <groupfilter function='member' level='[none:team:nk]' member='&quot;Manchester City&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' direction='ASC' using='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]' />
+          <slices>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:losses:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk] * ([federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:losses:qk] + [federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]))</rows>
+        <cols>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Man. Utd Total Wins and losses'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stats' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oyvh401d8i2s4178mcjd16ikzmk'>
+            <column caption='Losses' datatype='integer' name='[losses]' role='measure' type='quantitative' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Season' datatype='date' name='[season]' role='dimension' type='quantitative' />
+            <column-instance column='[losses]' derivation='Sum' name='[sum:losses:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[wins]' derivation='Sum' name='[sum:wins:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column-instance column='[season]' derivation='Year-Trunc' name='[tyr:season:qk]' pivot='key' type='quantitative' />
+            <column caption='Wins' datatype='integer' name='[wins]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]'>
+            <groupfilter function='member' level='[none:team:nk]' member='&quot;Manchester United&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' direction='ASC' using='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]' />
+          <slices>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:losses:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk] * ([federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:losses:qk] + [federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]))</rows>
+        <cols>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Measures'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stats' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oyvh401d8i2s4178mcjd16ikzmk'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Att Freekick Goal' datatype='integer' name='[att_freekick_goal]' role='measure' type='quantitative' />
+            <column caption='Att Hd Goal' datatype='integer' name='[att_hd_goal]' role='measure' type='quantitative' />
+            <column caption='Att Ibox Goal' datatype='integer' name='[att_ibox_goal]' role='measure' type='quantitative' />
+            <column caption='Att Obox Goal' datatype='integer' name='[att_obox_goal]' role='measure' type='quantitative' />
+            <column caption='Att Pen Goal' datatype='integer' name='[att_pen_goal]' role='measure' type='quantitative' />
+            <column caption='Backward Pass' datatype='integer' name='[backward_pass]' role='measure' type='quantitative' />
+            <column caption='Big Chance Missed' datatype='integer' name='[big_chance_missed]' role='measure' type='quantitative' />
+            <column caption='Clean Sheet' datatype='integer' name='[clean_sheet]' role='measure' type='quantitative' />
+            <column caption='Clearance Off Line' datatype='integer' name='[clearance_off_line]' role='measure' type='quantitative' />
+            <column caption='Corner Taken' datatype='integer' name='[corner_taken]' role='measure' type='quantitative' />
+            <column caption='Dispossessed' datatype='integer' name='[dispossessed]' role='measure' type='quantitative' />
+            <column caption='Goal Fastbreak' datatype='integer' name='[goal_fastbreak]' role='measure' type='quantitative' />
+            <column caption='Goals' datatype='integer' name='[goals]' role='measure' type='quantitative' />
+            <column caption='Goals Conceded' datatype='integer' name='[goals_conceded]' role='measure' type='quantitative' />
+            <column caption='Head Clearance' datatype='integer' name='[head_clearance]' role='measure' type='quantitative' />
+            <column caption='Hit Woodwork' datatype='integer' name='[hit_woodwork]' role='measure' type='quantitative' />
+            <column caption='Interception' datatype='integer' name='[interception]' role='measure' type='quantitative' />
+            <column caption='Last Man Tackle' datatype='integer' name='[last_man_tackle]' role='measure' type='quantitative' />
+            <column caption='Losses' datatype='integer' name='[losses]' role='measure' type='quantitative' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Ontarget Scoring Att' datatype='integer' name='[ontarget_scoring_att]' role='measure' type='quantitative' />
+            <column caption='Outfielder Block' datatype='integer' name='[outfielder_block]' role='measure' type='quantitative' />
+            <column caption='Own Goals' datatype='integer' name='[own_goals]' role='measure' type='quantitative' />
+            <column caption='Pen Goals Conceded' datatype='integer' name='[pen_goals_conceded]' role='measure' type='quantitative' />
+            <column caption='Penalty Conceded' datatype='integer' name='[penalty_conceded]' role='measure' type='quantitative' />
+            <column caption='Penalty Save' datatype='integer' name='[penalty_save]' role='measure' type='quantitative' />
+            <column caption='Punches' datatype='integer' name='[punches]' role='measure' type='quantitative' />
+            <column caption='Saves' datatype='integer' name='[saves]' role='measure' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[att_freekick_goal]' derivation='Sum' name='[sum:att_freekick_goal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[att_hd_goal]' derivation='Sum' name='[sum:att_hd_goal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[att_ibox_goal]' derivation='Sum' name='[sum:att_ibox_goal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[att_obox_goal]' derivation='Sum' name='[sum:att_obox_goal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[att_pen_goal]' derivation='Sum' name='[sum:att_pen_goal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[backward_pass]' derivation='Sum' name='[sum:backward_pass:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[big_chance_missed]' derivation='Sum' name='[sum:big_chance_missed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clean_sheet]' derivation='Sum' name='[sum:clean_sheet:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clearance_off_line]' derivation='Sum' name='[sum:clearance_off_line:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[corner_taken]' derivation='Sum' name='[sum:corner_taken:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[dispossessed]' derivation='Sum' name='[sum:dispossessed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[goal_fastbreak]' derivation='Sum' name='[sum:goal_fastbreak:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[goals]' derivation='Sum' name='[sum:goals:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[goals_conceded]' derivation='Sum' name='[sum:goals_conceded:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[head_clearance]' derivation='Sum' name='[sum:head_clearance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hit_woodwork]' derivation='Sum' name='[sum:hit_woodwork:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[interception]' derivation='Sum' name='[sum:interception:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[last_man_tackle]' derivation='Sum' name='[sum:last_man_tackle:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[losses]' derivation='Sum' name='[sum:losses:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ontarget_scoring_att]' derivation='Sum' name='[sum:ontarget_scoring_att:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[outfielder_block]' derivation='Sum' name='[sum:outfielder_block:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[own_goals]' derivation='Sum' name='[sum:own_goals:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pen_goals_conceded]' derivation='Sum' name='[sum:pen_goals_conceded:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[penalty_conceded]' derivation='Sum' name='[sum:penalty_conceded:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[penalty_save]' derivation='Sum' name='[sum:penalty_save:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[punches]' derivation='Sum' name='[sum:punches:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[saves]' derivation='Sum' name='[sum:saves:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_clearance]' derivation='Sum' name='[sum:total_clearance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_cross]' derivation='Sum' name='[sum:total_cross:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_high_claim]' derivation='Sum' name='[sum:total_high_claim:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_long_balls]' derivation='Sum' name='[sum:total_long_balls:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_offside]' derivation='Sum' name='[sum:total_offside:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_pass]' derivation='Sum' name='[sum:total_pass:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_red_card]' derivation='Sum' name='[sum:total_red_card:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_scoring_att]' derivation='Sum' name='[sum:total_scoring_att:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_tackle]' derivation='Sum' name='[sum:total_tackle:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_through_ball]' derivation='Sum' name='[sum:total_through_ball:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_yel_card]' derivation='Sum' name='[sum:total_yel_card:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[touches]' derivation='Sum' name='[sum:touches:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[wins]' derivation='Sum' name='[sum:wins:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column caption='Total Clearance' datatype='integer' name='[total_clearance]' role='measure' type='quantitative' />
+            <column caption='Total Cross' datatype='integer' name='[total_cross]' role='measure' type='quantitative' />
+            <column caption='Total High Claim' datatype='integer' name='[total_high_claim]' role='measure' type='quantitative' />
+            <column caption='Total Long Balls' datatype='integer' name='[total_long_balls]' role='measure' type='quantitative' />
+            <column caption='Total Offside' datatype='integer' name='[total_offside]' role='measure' type='quantitative' />
+            <column caption='Total Pass' datatype='integer' name='[total_pass]' role='measure' type='quantitative' />
+            <column caption='Total Red Card' datatype='integer' name='[total_red_card]' role='measure' type='quantitative' />
+            <column caption='Total Scoring Att' datatype='integer' name='[total_scoring_att]' role='measure' type='quantitative' />
+            <column caption='Total Tackle' datatype='integer' name='[total_tackle]' role='measure' type='quantitative' />
+            <column caption='Total Through Ball' datatype='integer' name='[total_through_ball]' role='measure' type='quantitative' />
+            <column caption='Total Yel Card' datatype='integer' name='[total_yel_card]' role='measure' type='quantitative' />
+            <column caption='Touches' datatype='integer' name='[touches]' role='measure' type='quantitative' />
+            <column caption='Wins' datatype='integer' name='[wins]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <manual-sort column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:touches:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_pass:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_long_balls:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:backward_pass:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_clearance:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_cross:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_tackle:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_scoring_att:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:head_clearance:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:interception:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:dispossessed:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:corner_taken:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:ontarget_scoring_att:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_through_ball:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:outfielder_block:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_offside:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_ibox_goal:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_yel_card:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_high_claim:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:saves:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals_conceded:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:big_chance_missed:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:punches:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:hit_woodwork:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:clean_sheet:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_hd_goal:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_obox_goal:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:losses:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:last_man_tackle:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_pen_goal:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goal_fastbreak:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:penalty_conceded:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:clearance_off_line:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:pen_goals_conceded:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_red_card:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:att_freekick_goal:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:own_goals:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:penalty_save:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Arsenal&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Chelsea&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Liverpool&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Manchester City&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Manchester United&quot;' />
+            </groupfilter>
+          </filter>
+          <columns>
+            <shelf-sort direction='ASC' measure-to-sort-by='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_pass:qk]'>
+              <dimensions-to-sort>
+                <dimension>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</dimension>
+              </dimensions-to-sort>
+            </shelf-sort>
+          </columns>
+          <slices>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</column>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' value='208' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]</rows>
+        <cols>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Pie Red Cards Yellow Cards'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stats' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oyvh401d8i2s4178mcjd16ikzmk'>
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_red_card]' derivation='Sum' name='[sum:total_red_card:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_yel_card]' derivation='Sum' name='[sum:total_yel_card:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column caption='Total Red Card' datatype='integer' name='[total_red_card]' role='measure' type='quantitative' />
+            <column caption='Total Yel Card' datatype='integer' name='[total_yel_card]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_red_card:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_yel_card:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Arsenal&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Chelsea&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Liverpool&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Manchester City&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Manchester United&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Tottenham Hotspur&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]</column>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='232' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_red_card:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' />
+              <size column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7911050319671631' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Red Cards Yellow Cards Yearwise'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stats' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oyvh401d8i2s4178mcjd16ikzmk'>
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Season' datatype='date' name='[season]' role='dimension' type='quantitative' />
+            <column-instance column='[total_red_card]' derivation='Sum' name='[sum:total_red_card:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_yel_card]' derivation='Sum' name='[sum:total_yel_card:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column caption='Total Red Card' datatype='integer' name='[total_red_card]' role='measure' type='quantitative' />
+            <column caption='Total Yel Card' datatype='integer' name='[total_yel_card]' role='measure' type='quantitative' />
+            <column-instance column='[season]' derivation='Year-Trunc' name='[tyr:season:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_red_card:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_yel_card:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_red_card:qk]' included-values='in-range'>
+            <max>9</max>
+          </filter>
+          <slices>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_red_card:qk]</column>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:total_red_card:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[Multiple Values]</rows>
+        <cols>([federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk] / ([federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok] / [federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]))</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Stepped lines'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stats' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oyvh401d8i2s4178mcjd16ikzmk'>
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Season' datatype='date' name='[season]' role='dimension' type='quantitative' />
+            <column-instance column='[wins]' derivation='Sum' name='[sum:wins:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column caption='Wins' datatype='integer' name='[wins]' role='measure' type='quantitative' />
+            <column-instance column='[season]' derivation='Year' name='[yr:season:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]'>
+            <groupfilter from='&quot;AFC Bournemouth&quot;' function='range' level='[none:team:nk]' to='&quot;Wolverhampton Wanderers&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' />
+              <lod column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='step' />
+                <format attr='size' value='2.1104972362518311' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]</rows>
+        <cols>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[yr:season:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Total Wins and losses'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stats' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oyvh401d8i2s4178mcjd16ikzmk'>
+            <column caption='Losses' datatype='integer' name='[losses]' role='measure' type='quantitative' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[losses]' derivation='Sum' name='[sum:losses:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[wins]' derivation='Sum' name='[sum:wins:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column caption='Wins' datatype='integer' name='[wins]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:losses:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' direction='ASC' using='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]' />
+          <slices>
+            <column>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[Multiple Values]</rows>
+        <cols>([federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk] / [federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Total goals'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>TOTAL GOALS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stats' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oyvh401d8i2s4178mcjd16ikzmk'>
+            <column caption='Goals' datatype='integer' name='[goals]' role='measure' type='quantitative' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[goals]' derivation='Sum' name='[sum:goals:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals:qk]' />
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals:qk]' />
+              <text column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' />
+              <text column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Wins yearwise'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Wins yearwise&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stats' name='federated.0oyvh401d8i2s4178mcjd16ikzmk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oyvh401d8i2s4178mcjd16ikzmk'>
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Season' datatype='date' name='[season]' role='dimension' type='quantitative' />
+            <column-instance column='[wins]' derivation='Sum' name='[sum:wins:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column-instance column='[season]' derivation='Year-Trunc' name='[tyr:season:qk]' pivot='key' type='quantitative' />
+            <column caption='Wins' datatype='integer' name='[wins]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]' />
+              <text column='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:qk]</rows>
+        <cols>[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Measures'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BD4B8EBA-7765-4429-A25F-7BE5318FFD18}' />
+    </window>
+    <window class='worksheet' name='Box and Whisker'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1C621F69-CB92-4B95-A764-1D6ACD0BFF86}' />
+    </window>
+    <window class='worksheet' name='Wins yearwise'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:wins:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8E813DA2-FBBF-4BBA-86AD-DCB258656A5B}' />
+    </window>
+    <window class='worksheet' name='Total Wins and losses'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8F6451D0-9127-4504-8E85-F8CF100E6927}' />
+    </window>
+    <window class='worksheet' name='Stepped lines'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' type='color' />
+            <card param='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[none:team:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='16' />
+      </viewpoint>
+      <simple-id uuid='{38B342F9-A44D-482D-8743-2493C376C9B0}' />
+    </window>
+    <window class='worksheet' name='Man. City Total Wins and losses'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{32F0A5FC-2DB9-4679-A526-4A19B675DD7D}' />
+    </window>
+    <window class='worksheet' name='Man. Utd Total Wins and losses'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B7179B43-B87D-4CD6-AEB9-93DED4DD8B0E}' />
+    </window>
+    <window class='worksheet' name='Attack'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6A0EF194-7764-41C8-867C-AA1DFFB68A93}' />
+    </window>
+    <window class='worksheet' name='Total goals'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[sum:goals:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4BCF0226-36FE-4CAC-8CC9-7F97525C3442}' />
+    </window>
+    <window class='worksheet' name='Goals scored | Goals conceded'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[tyr:season:ok]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{54C40101-D314-4E1F-9820-0E60C3A96CD6}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Pie Red Cards Yellow Cards'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' type='color' />
+            <card pane-specification-id='2' param='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[Multiple Values]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9FB6CDCB-B6D3-4CC4-B21E-43E5261CA77B}' />
+    </window>
+    <window class='worksheet' name='Red Cards Yellow Cards Yearwise'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0oyvh401d8i2s4178mcjd16ikzmk].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CE4C8FF1-F52C-4006-83C1-B28E5D1E887B}' />
+    </window>
+  </windows>
+</workbook>
